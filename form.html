@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Share a Meal</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(253,187,45,0.5)), url('Hunger.jpg') no-repeat center center fixed;
+      background-size: cover;
+      min-height: 100vh;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      background: rgba(255,255,255,0.95);
+      box-shadow: 0 4px 24px #2228;
+      border-radius: 18px;
+      max-width: 480px;
+      margin: 60px auto;
+      padding: 2.5em 2em 2em 2em;
+      position: relative;
+      text-align: left;
+    }
+    h2 {
+      color: #185a9d;
+      font-size: 2em;
+      margin-bottom: 0.5em;
+      letter-spacing: 1px;
+      text-align: center;
+      text-shadow: 1px 2px 8px #fff8;
+    }
+    .long-msg {
+      background: linear-gradient(90deg, #ffe082 0%, #ffb74d 100%);
+      color: #444;
+      font-size: 1.08em;
+      margin-bottom: 2em;
+      padding: 1em 1.2em;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px #ffecb3aa;
+      font-weight: 500;
+      text-align: center;
+      line-height: 1.7;
+    }
+    label {
+      color: #185a9d;
+      font-weight: bold;
+      margin-top: 1em;
+      display: block;
+    }
+    input, textarea {
+      margin-top: 0.3em;
+      border-radius: 6px;
+      border: 1px solid #43cea2;
+      padding: 0.7em;
+      width: 100%;
+      font-size: 1em;
+      background: #f7fafc;
+      box-sizing: border-box;
+      margin-bottom: 1em;
+      transition: border 0.2s;
+    }
+    input:focus, textarea:focus {
+      border: 2px solid #185a9d;
+      outline: none;
+      background: #e3f2fd;
+    }
+    button {
+      background: linear-gradient(90deg, #43cea2 0%, #185a9d 100%);
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      padding: 1em 2em;
+      font-size: 1.1em;
+      margin-top: 1em;
+      font-weight: bold;
+      box-shadow: 0 2px 8px #185a9d44;
+      transition: background 0.3s, transform 0.2s;
+      cursor: pointer;
+      width: 100%;
+      display: block;
+    }
+    button:hover {
+      background: linear-gradient(90deg, #185a9d 0%, #43cea2 100%);
+      transform: translateY(-2px) scale(1.04);
+      color: #fff;
+      text-shadow: 0 1px 4px #2224;
+    }
+    a {
+      display: block;
+      margin-top: 1.5em;
+      color: #185a9d;
+      text-align: center;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1em;
+      transition: color 0.2s;
+    }
+    a:hover {
+      color: #43cea2;
+      text-decoration: underline;
+    }
+    @media (max-width: 600px) {
+      .container {
+        max-width: 98vw;
+        padding: 1.2em 0.5em;
+      }
+      h2 {
+        font-size: 1.5em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Share a Meal</h2>
+    <div class="long-msg">
+      By sharing your extra food, you are making a real difference in someone’s life. <br>
+      <b>Your kindness helps reduce food waste and brings hope to those in need.</b><br>
+      Please fill out the form below with as much detail as possible. <br>
+      <span style="color:#185a9d;">Thank you for being a part of our caring community and for spreading generosity!</span>
+    </div>
+    <form action="/submit" method="POST">
+      <label for="name">Your Name</label>
+      <input type="text" name="name" id="name" required>
+
+      <label for="contact">Contact Info (phone/email)</label>
+      <input type="text" name="contact" id="contact" required>
+
+      <label for="quantity">Food Quantity (e.g., 3 boxes, 2 plates)</label>
+      <input type="text" name="quantity" id="quantity" required>
+
+      <label for="maxPersons">Can Feed Up To (number of people)</label>
+      <input type="number" name="maxPersons" id="maxPersons" min="1" required>
+
+      <label for="location">Pickup Location</label>
+      <textarea name="location" id="location" rows="2" required></textarea>
+
+      <button type="submit">Share Meal</button>
+    </form>
+    <a href="/">← Back to Home</a>
+  </div>

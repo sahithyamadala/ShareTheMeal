@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ShareTheMeal - Home</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('Hunger.jpg') no-repeat center center fixed;
+      background-size: cover;
+      min-height: 100vh;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      background: rgba(255,255,255,0.92);
+      box-shadow: 0 4px 24px #2228;
+      border-radius: 18px;
+      max-width: 600px;
+      margin: 60px auto;
+      padding: 2.5em 2em 2em 2em;
+      text-align: center;
+      position: relative;
+    }
+    h1 {
+      color: #1e7e34;
+      font-size: 2.5em;
+      margin-bottom: 0.5em;
+      letter-spacing: 2px;
+      text-shadow: 1px 2px 8px #fff8;
+    }
+    .desc {
+      color: #444;
+      font-size: 1.2em;
+      margin-bottom: 2em;
+      background: linear-gradient(90deg, #ffe082 0%, #ffb74d 100%);
+      padding: 1em;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px #ffecb3aa;
+      font-weight: 500;
+    }
+    .button {
+      background: linear-gradient(90deg, #43cea2 0%, #185a9d 100%);
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      padding: 1em 2em;
+      font-size: 1.1em;
+      margin: 1em 0.5em 0 0;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 2px 8px #185a9d44;
+      transition: background 0.3s, transform 0.2s;
+      display: inline-block;
+    }
+    .button:hover {
+      background: linear-gradient(90deg, #185a9d 0%, #43cea2 100%);
+      transform: translateY(-2px) scale(1.04);
+      color: #fff;
+      text-shadow: 0 1px 4px #2224;
+    }
+    @media (max-width: 700px) {
+      .container {
+        max-width: 95vw;
+        padding: 1.2em 0.5em;
+      }
+      h1 {
+        font-size: 2em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to <span style="color:#ff9800;">ShareTheMeal</span></h1>
+    <p class="desc">
+      🌱 Do you have extra food? <b>Share it with someone in need!</b><br>
+      🍲 Or, check if there are meals available near you.<br>
+      <span style="color:#1e7e34;">Together, we can fight hunger and food waste.</span>
+    </p>
+    <a href="/form.html" class="button">🍛 Share a Meal</a>
+    <a href="/meals" class="button">🍽️ See Available

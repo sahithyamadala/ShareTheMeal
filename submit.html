@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Thank You!</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background: linear-gradient(rgba(30,126,52,0.7), rgba(255,152,0,0.7)), url('Hunger.jpg') no-repeat center center fixed;
+      background-size: cover;
+      min-height: 100vh;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      background: rgba(255,255,255,0.96);
+      box-shadow: 0 4px 24px #2228;
+      border-radius: 18px;
+      max-width: 420px;
+      margin: 80px auto;
+      padding: 2.5em 2em 2em 2em;
+      text-align: center;
+      position: relative;
+    }
+    h2 {
+      color: #1e7e34;
+      font-size: 2em;
+      margin-bottom: 0.5em;
+      letter-spacing: 1px;
+      text-shadow: 1px 2px 8px #fff8;
+    }
+    .thanks {
+      color: #185a9d;
+      font-size: 1.15em;
+      margin-bottom: 1.5em;
+      background: linear-gradient(90deg, #ffe082 0%, #ffb74d 100%);
+      padding: 1.2em 1em;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px #ffecb3aa;
+      font-weight: 500;
+      display: inline-block;
+      line-height: 1.7;
+    }
+    .icon {
+      font-size: 2.5em;
+      margin-bottom: 0.3em;
+      display: block;
+      text-shadow: 0 2px 8px #fff8;
+    }
+    a {
+      display: inline-block;
+      margin-top: 2em;
+      color: #185a9d;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1em;
+      border-radius: 6px;
+      padding: 0.7em 1.5em;
+      background: linear-gradient(90deg, #43cea2 0%, #185a9d 100%);
+      color: #fff;
+      box-shadow: 0 2px 8px #185a9d44;
+      transition: background 0.3s, transform 0.2s;
+    }
+    a:hover {
+      background: linear-gradient(90deg, #185a9d 0%, #43cea2 100%);
+      color: #fff;
+      text-decoration: underline;
+      transform: translateY(-2px) scale(1.04);
+    }
+    @media (max-width: 600px) {
+      .container {
+        max-width: 98vw;
+        padding: 1.2em 0.5em;
+      }
+      h2 {
+        font-size: 1.3em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <span class="icon">🙏</span>
+    <h2>Thank You for Sharing!</h2>
+    <div class="thanks">
+      Your meal offer has been received.<br>
+      <b>Your generosity brings hope and nourishment to those in need.</b><br>
+      <span style="color:#1e7e34;">Together, we are building a kinder, more caring community.<br>
+      Every act of sharing makes a difference!</span>
+    </div>
+    <a href="/">← Back to Home</a>
+  </div>
+</body>
