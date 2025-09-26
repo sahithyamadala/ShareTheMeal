@@ -41,12 +41,4 @@ Reduce food waste, spread kindness, and help build a more caring world, one meal
 
 ---
 
-## 📸 Screenshots
-
-| Home Page | Share Form | Thank You |
-|-----------|------------|-----------|
-| ![Home](Hunger.jpg) | ![Form](Hunger.jpg) | ![Thank You](Hunger.jpg) |
-
----
-
 > **Thank you for helping fight hunger and food waste!**
